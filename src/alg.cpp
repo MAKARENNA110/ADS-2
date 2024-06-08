@@ -50,12 +50,9 @@ double sinn(double x, uint16_t count) {
 double cosn(double x, uint16_t count) {
     double SumOfItem = 1;
     for (uint16_t i = 2; i < count + 1; i++) {
-        if (i % 2 == 0)
-        {
+        if (i % 2 == 0) {
             SumOfItem -= calcItem(x, 2 * i - 2);
-        }
-        else
-        {
+        } else {
             SumOfItem += calcItem(x, 2 * i - 2);
         }
     }
